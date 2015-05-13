@@ -7,6 +7,7 @@
 //
 
 #import "CompilerFlags.h"
+#import "CFPluginWindowController.h"
 
 static CompilerFlags *sharedPlugin;
 
@@ -45,12 +46,19 @@ static CompilerFlags *sharedPlugin;
         NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
         if (menuItem) {
             [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-            NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Do Action" action:@selector(doMenuAction) keyEquivalent:@""];
+            NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Do Action" action:@selector(loadWindowAndPutInFront) keyEquivalent:@""];
             [actionMenuItem setTarget:self];
             [[menuItem submenu] addItem:actionMenuItem];
         }
     }
     return self;
+}
+
+- (void)loadWindowAndPutInFront {
+    if (!self.windowController.window)
+        self.windowController = [[CFPluginWindowController alloc] initWithBundle:self.bundle];
+    
+    [[self.windowController window] makeKeyAndOrderFront:self];
 }
 
 // Sample Action, for menu item:
@@ -59,6 +67,7 @@ static CompilerFlags *sharedPlugin;
     NSAlert *alert = [[NSAlert alloc] init];
     [alert setMessageText:@"Hello, World"];
     [alert runModal];
+    
 }
 
 - (void)dealloc

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "890A4B3E171F031300AFE577"
+               BlueprintIdentifier = "D8EE1EB51AFC68C8003AD00E"
                BuildableName = "CompilerFlags.xcplugin"
                BlueprintName = "CompilerFlags"
                ReferencedContainer = "container:CompilerFlags.xcodeproj">
@@ -56,12 +56,13 @@
       allowLocationSimulation = "NO"
       viewDebuggingEnabled = "No">
       <PathRunnable
+         runnableDebuggingMode = "0"
          FilePath = "/Applications/Xcode.app">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "890A4B3E171F031300AFE577"
+            BlueprintIdentifier = "D8EE1EB51AFC68C8003AD00E"
             BuildableName = "CompilerFlags.xcplugin"
             BlueprintName = "CompilerFlags"
             ReferencedContainer = "container:CompilerFlags.xcodeproj">

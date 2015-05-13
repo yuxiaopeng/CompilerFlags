@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8C6968B1AFC9CBA00C847BB /* CFPluginWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6968A1AFC9CBA00C847BB /* CFPluginWindowController.m */; };
+		D8D14E9F1AFCA997003977E9 /* CFPluginWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D14E9E1AFCA997003977E9 /* CFPluginWindowController.xib */; };
 		D8EE1EBA1AFC68C8003AD00E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EE1EB91AFC68C8003AD00E /* AppKit.framework */; };
 		D8EE1EBC1AFC68C8003AD00E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EE1EBB1AFC68C8003AD00E /* Foundation.framework */; };
 		D8EE1EC11AFC68C8003AD00E /* CompilerFlags.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = D8EE1EC01AFC68C8003AD00E /* CompilerFlags.xcscheme */; };
@@ -14,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8C696891AFC9CBA00C847BB /* CFPluginWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPluginWindowController.h; sourceTree = "<group>"; };
+		D8C6968A1AFC9CBA00C847BB /* CFPluginWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFPluginWindowController.m; sourceTree = "<group>"; };
+		D8D14E9E1AFCA997003977E9 /* CFPluginWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFPluginWindowController.xib; sourceTree = "<group>"; };
 		D8EE1EB61AFC68C8003AD00E /* CompilerFlags.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompilerFlags.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EE1EB91AFC68C8003AD00E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		D8EE1EBB1AFC68C8003AD00E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -36,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8C6967E1AFC99B000C847BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8C696891AFC9CBA00C847BB /* CFPluginWindowController.h */,
+				D8C6968A1AFC9CBA00C847BB /* CFPluginWindowController.m */,
+				D8D14E9E1AFCA997003977E9 /* CFPluginWindowController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D8EE1EAD1AFC68C8003AD00E = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +80,7 @@
 		D8EE1EBD1AFC68C8003AD00E /* CompilerFlags */ = {
 			isa = PBXGroup;
 			children = (
+				D8C6967E1AFC99B000C847BB /* Controllers */,
 				D8EE1EC21AFC68C8003AD00E /* CompilerFlags.h */,
 				D8EE1EC31AFC68C8003AD00E /* CompilerFlags.m */,
 				D8EE1EBE1AFC68C8003AD00E /* Supporting Files */,
@@ -138,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8EE1EC11AFC68C8003AD00E /* CompilerFlags.xcscheme in Resources */,
+				D8D14E9F1AFCA997003977E9 /* CFPluginWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8EE1EC41AFC68C8003AD00E /* CompilerFlags.m in Sources */,
+				D8C6968B1AFC9CBA00C847BB /* CFPluginWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +291,7 @@
 				D8EE1EC91AFC68C8003AD00E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

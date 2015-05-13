@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface CFPluginWindowController : NSWindowController
+@interface CFPluginWindowController : NSWindowController <NSUserNotificationCenterDelegate>
+
+- (id)initWithBundle:(NSBundle *)bundle;
 
 @end

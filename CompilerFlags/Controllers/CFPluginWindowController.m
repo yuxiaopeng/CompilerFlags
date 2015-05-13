@@ -7,6 +7,7 @@
 //
 
 #import "CFPluginWindowController.h"
+#import "IDE"
 
 @interface CFPluginWindowController ()
 
@@ -18,6 +19,17 @@
     [super windowDidLoad];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+}
+
+- (id)initWithBundle:(NSBundle *)bundle {
+    if (self = [super initWithWindowNibName:NSStringFromClass([CFPluginWindowController class])]) {
+        @try {
+            if ([NSUserNotificationCenter class])
+                [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
+        }
+        @catch(NSException *exception) { NSLog(@"I've heard you like exceptions... %@", exception); }
+    }
+    return self;
 }
 
 @end

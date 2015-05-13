@@ -7,10 +7,13 @@
 //
 
 #import <AppKit/AppKit.h>
+#import "CFPluginWindowController.h"
 
 @interface CompilerFlags : NSObject
 
 + (instancetype)sharedPlugin;
 
 @property (nonatomic, strong, readonly) NSBundle* bundle;
+@property (nonatomic, strong) CFPluginWindowController *windowController;
+
 @end
